@@ -1,0 +1,112 @@
+@font-face {
+  font-family: apple-regular;
+  src: url(fonts/sf-pro-text_regular.woff2);
+}
+@font-face {
+  font-family: apple-h1;
+  src: url(fonts/sf-pro-display_semibold.woff2);
+}
+@font-face {
+  font-family: apple-h3;
+  src: url(fonts/sf-pro-text_semibold.woff2);
+}
+@font-face {
+  font-family: apple-h3-2;
+  src: url(fonts/sf-pro-display_regular.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 80vh;
+  background-image: url(images/hero_iphone_17_pro__bknyzxfk2agi_large_2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.nav h4 {
+  font-family: apple-regular;
+  font-weight: 200;
+  font-size: 12px;
+  padding: 10px 15px;
+  color: #bbb8b8;
+  cursor: pointer;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #161616;
+  backdrop-filter: blur(10px);
+  z-index: 5;
+  padding: 3px;
+}
+.icon {
+  font-size: 17px;
+}
+.head-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 10px;
+}
+.head-text h1,
+h3 {
+  color: #fff;
+}
+.head-text h1 {
+  font-family: apple-h1;
+  font-size: 55px;
+  margin-bottom: 2px;
+}
+.head-text h3 {
+  font-family: apple-h3-2;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.head-text .links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.links {
+  margin-top: -3px;
+}
+.links button {
+  font-family: apple-h3-2;
+  padding: 11px 21px;
+  border-radius: 25px;
+  background-color: royalblue;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#buy-btn {
+  background-color: transparent;
+  border: 1px solid royalblue;
+  color: royalblue;
+}
+#buy-btn:hover {
+  background-color: royalblue;
+  color: #fff;
+}
+#iphone-Air {
+  background-color: #111;
+  width: 100%;
+  height: 20vh;
+}
