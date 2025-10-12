@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+   height: 100%;
+   background-color: #000;
+}
+body::-webkit-scrollbar{
+   display: none;
+  
+}
+main{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    gap: 10px;
+   background-color: black;
+   padding: 15px 5px;
+   flex-wrap: nowrap;
+    overflow: auto;
+    section{
+        width: 250px;
+        height: 75vh;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+        transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        flex-shrink: 0;
+        
+    }
+    section img{
+        width: 100%;
+        height: 100%;
+    }
+    section:hover{
+        cursor: pointer;
+        overflow: hidden;
+    }
+    section:nth-child(1){
+        background-image: url(images/Mario\ Chess.jpg);
+    }
+    section:nth-child(2){
+        background-image: url(images/captain.jpg);
+    }
+    section:nth-child(3){
+        background-image: url(images/thor.jpg);
+    }
+    section:nth-child(4){
+        background-image: url(images/natasha.jpg);
+    }
+    section:nth-child(5){
+        background-image: url(images/hulk.jpg);
+    }
+    section:nth-child(6){
+        background-image: url(images/loki.jpg);
+    }
+    section:nth-child(7){
+        background-image: url(images/spiderman.jpg);
+    }
+    section:nth-child(8){
+        background-image: url(images/batman.jpg);
+    }
+    section:nth-child(9){
+        background-image: url(images/c02c6d95b66d9970e0472f7d48c04af2.jpg);
+    }
+}
+header{
+  width: 100%;
+  height: 13vh;
+  align-content: center;
+
+  h1{
+    text-align: center;
+    color: #d3cbcb;
+    letter-spacing: 5px;
+    font-size: 40px;
+    -webkit-text-stroke: 1px red;
+  }
+  
+}
