@@ -25,7 +25,7 @@ main {
   overflow: auto;
 }
 main section {
-  width: 250px;
+  flex-grow: 1;
   height: 75vh;
   background-size: cover;
   background-position: center;
@@ -40,6 +40,7 @@ main section img {
 main section:hover {
   cursor: pointer;
   overflow: hidden;
+  flex-grow: 3;
 }
 main section:nth-child(1) {
   background-image: url(images/Mario\ Chess.jpg);
