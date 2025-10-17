@@ -1,0 +1,294 @@
+:root {
+  --grey: #212121;
+  --green: #009660;
+  --lgreen: #04e097;
+  --white: #e9e9e9;
+  --black: #0c0c0c;
+  --lgrey: #353535;
+  --mgrey: #1e1e1e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  color: #e9e9e9;
+}
+
+@font-face {
+  font-family: gilroy-extrabold;
+  src: url(./fonts/Gilroy-Extrabold_YC6oQDa3Ix.ttf);
+}
+@font-face {
+  font-family: gilroy-bold;
+  src: url(./fonts/Gilroy-Bold_JK4cTGJOE.ttf);
+}
+@font-face {
+  font-family: gilroy-medium;
+  src: url(./fonts/Gilroy-Medium_eHDK2RllDd.ttf);
+}
+@font-face {
+  font-family: neu-regular;
+  src: url(./fonts/NeueMachina-Regular_DQCmjH1st.ttf);
+}
+@font-face {
+  font-family: neu-bold;
+  src: url(./fonts/NeueMachina-Bold_WaMOsLX9Z9.ttf);
+}
+@font-face {
+  font-family: neu-light;
+  src: url(./fonts/NeueMachina-Light_gwWCZxVuQl.ttf);
+}
+@font-face {
+  font-family: helvetica-regular;
+  src: url(./fonts/HelveticaNowDisplay-Regular_5Mzhp8KlA8_CAVTbnsPOM.woff2);
+}
+@font-face {
+  font-family: helvetica-medium;
+  src: url(./fonts/HelveticaNowDisplay-Medium_2wEhlmo-TD_wsqqEEwmJC.woff2);
+}
+@font-face {
+  font-family: helvetica-light;
+  src: url(./fonts/HelveticaNowDisplay-Light_M4nzWhve6k_k7HolyzL10.woff2);
+}
+@font-face {
+  font-family: helvetica-extrabold;
+  src: url(./fonts/HelveticaNowDisplay-ExtraBold_Qqt_sGOvuc_Z0ZOJEQucI.woff2);
+}
+@font-face {
+  font-family: helvetica-bold;
+  src: url(./fonts/HelveticaNowDisplay-Bold_VMHV5twUMR_2SBNfxj1ry.woff2);
+}
+@font-face {
+  font-family: fontspring;
+  src: url(./fonts/Fontspring-DEMO-juana-extralightit_toKzXEsfr.ttf);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+}
+nav .nav-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+nav .nav-1 img {
+  height: 52px;
+}
+nav .nav-1 h4 {
+  margin-top: 5px;
+  font-family: neu-regular;
+  font-weight: 100;
+  color: #e9e9e9;
+  font-size: 20px;
+}
+nav .nav-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65%;
+}
+nav .nav-2 h4 {
+  font-family: neu-light;
+  font-weight: 50;
+  font-size: 18px;
+  padding: 0 5px;
+}
+nav .nav-2 h4 img {
+  height: 35px;
+  border-radius: 50%;
+}
+nav .nav-2 h4 i {
+  font-size: 20px;
+}
+nav .nav-2 h4:nth-child(3) {
+  font-size: 20px;
+  font-family: neu-bold;
+}
+nav .nav-2 h4:nth-child(4) {
+  font-size: 20px;
+  font-family: neu-bold;
+}
+nav .nav-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  display: none;
+}
+nav .nav-3 h4 {
+  font-family: neu-light;
+  font-weight: 50;
+  font-size: 14px;
+  padding: 0 5px;
+}
+nav .nav-3 h4 img {
+  height: 35px;
+  border-radius: 50%;
+}
+nav .nav-3 h4 i {
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 10px 5%;
+  }
+  nav .nav-1 h4 {
+    font-size: 14px;
+    font-family: neu-regular;
+    font-weight: 50;
+  }
+  nav .nav-1 img {
+    height: 30px;
+  }
+  nav .nav-2 {
+    display: none;
+  }
+  nav .nav-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+}
+main {
+  padding: 15px 5%;
+}
+main .section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .section-1 .left h1 {
+  font-size: 52px;
+  font-family: helvetica-medium;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #e9e9e9;
+}
+main .section-1 .left .tags {
+  padding: 30px 0;
+  padding-bottom: 50px;
+}
+main .section-1 .left .tags h4 {
+  display: inline-block;
+  font-size: 15px;
+  padding: 15px 25px;
+  background-color: #212121;
+  font-family: helvetica-medium;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  color: #e9e9e9;
+}
+main .section-1 .left h3 {
+  font-size: 45px;
+  font-family: helvetica-bold;
+  font-weight: 500;
+}
+main .section-1 .left h3 #dis-price {
+  color: #04e097;
+  font-size: 40px;
+  font-family: gilroy-bold;
+  font-weight: 600;
+}
+main .section-1 .left h3 #act-price {
+  color: #888;
+  font-size: 25px;
+}
+main .section-1 .left h3 #gst {
+  font-size: 28px;
+}
+main .section-1 .left h5 {
+  font-size: 20px;
+  font-family: gilroy-bold;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  color: #04e097;
+  margin-top: 3px;
+  font-weight: 100;
+}
+main .section-1 .left .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+main .section-1 .left .buttons button {
+  width: 50%;
+  padding: 20px 30px;
+  font-size: 28px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+}
+main .section-1 .left .buttons button:nth-child(1) {
+  font-family: gilroy-extrabold;
+  color: #fff;
+  background-color: #009560;
+}
+main .section-1 .left .buttons button:nth-child(2) {
+  color: #fff;
+  background-color: #353535;
+}
+main .section-1 .left h6 {
+  font-family: helvetica-light;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+main .section-1 .left h6 #ltd {
+  color: rgb(2, 231, 151);
+}
+main .section-1 .right {
+  margin-top: -2%;
+}
+main .section-1 .right .right-in {
+  width: 700px;
+}
+main .section-1 .right .right-in .image {
+  width: 100%;
+}
+main .section-1 .right .right-in .image img {
+  width: 100%;
+}
+main .section-1 .right .right-in .image-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: var(--grey);
+  padding: 50px 20px 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+main .section-1 .right .right-in .image-bottom h4 {
+  width: 45%;
+  background-color: #151515;
+  padding: 20px 15px;
+  border-radius: 5px;
+  font-family: gilroy-bold;
+  font-size: 18px;
+}
+main .section-1 .right .right-in .image-bottom h4 span {
+  font-family: gilroy-medium;
+  font-weight: 100;
+  color: var(--lgreen);
+}/*# sourceMappingURL=style.css.map */
