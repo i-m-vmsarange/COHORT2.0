@@ -22,35 +22,44 @@ body {
   height: 100%;
 }
 
+html {
+  font-size: clamp(15px, 1.5vw, 17px);
+}
+
 body {
   background-color: #121212;
+}
+
+section {
+  max-width: 2000px;
 }
 
 main {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-main section {
+main section.view1 {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
 }
-main section .top {
+main section.view1 .top {
   width: 100%;
 }
-main section .top img {
+main section.view1 .top img {
   width: 100%;
   border-radius: 10px;
 }
-main section .bottom {
+main section.view1 .bottom {
   background-color: #1e1e1e;
   border-radius: 10px;
   padding: 1.5rem;
 }
-main section .bottom .studio {
+main section.view1 .bottom .studio {
   font-family: Lq38;
   color: #edece8;
   font-size: 1rem;
@@ -58,34 +67,36 @@ main section .bottom .studio {
   letter-spacing: 1px;
   margin-bottom: 4rem;
 }
-main section .bottom .text {
+main section.view1 .bottom .text {
   color: #c8c6c3;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
-main section .bottom .text h1 {
+main section.view1 .bottom .text h1 {
   font-size: 2.25rem;
   font-family: chillax-regular;
   color: #edece8;
   font-weight: 500;
   line-height: 1.2;
+  width: 85%;
 }
-main section .bottom .text h5 {
+main section.view1 .bottom .text h5 {
   font-size: 1.25rem;
   font-family: satoshi-light;
-  color: #838280;
-  font-weight: 800;
+  color: rgba(244, 242, 237, 0.6);
+  font-weight: 500;
   letter-spacing: 1px;
-  line-height: 1.5;
+  line-height: 160%;
+  width: 85%;
 }
-main section .bottom .text .button {
+main section.view1 .bottom .text .button {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
   padding-top: 0.5rem;
 }
-main section .bottom .text .button .arrow {
+main section.view1 .bottom .text .button .arrow {
   background-color: #292929;
   width: 2rem;
   height: 2rem;
@@ -95,7 +106,7 @@ main section .bottom .text .button .arrow {
   align-content: center;
   align-self: baseline;
 }
-main section .bottom .text .button button {
+main section.view1 .bottom .text .button button {
   width: -moz-fit-content;
   width: fit-content;
   font-family: Lq38;
@@ -106,4 +117,558 @@ main section .bottom .text .button button {
   border: none;
   background-color: transparent;
   color: #edece8;
+}
+main section.view2 {
+  color: #fff;
+  width: 100%;
+}
+main section.view2 .boxes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+main section.view2 .boxes h6 {
+  font-size: 1rem;
+  font-family: Lq38;
+  color: rgba(244, 242, 237, 0.6);
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+main section.view2 .boxes h1 {
+  font-size: 2.45rem;
+  font-family: chillax-regular;
+  color: #edece8;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+main section.view2 .box {
+  padding: 1rem;
+  text-align: center;
+}
+main section.view3 {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.view3 .top {
+  width: 100%;
+}
+main section.view3 .top img {
+  width: 100%;
+  border-radius: 10px;
+}
+main section.view3 .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 2rem;
+}
+main section.view3 .bottom .studio {
+  font-family: Lq38;
+  color: #edece8;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+main section.view3 .bottom .text {
+  color: #c8c6c3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section.view3 .bottom .text h1 {
+  font-size: 2.25rem;
+  font-family: chillax-regular;
+  color: #edece8;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 85%;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+main section.view3 .bottom .text h5 {
+  font-size: 1.175rem;
+  font-family: satoshi-light;
+  color: rgba(244, 242, 237, 0.6);
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 100%;
+}
+main section.view4 {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.view4 .top {
+  width: 100%;
+}
+main section.view4 .top img {
+  width: 100%;
+  border-radius: 10px;
+}
+main section.view4 .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 2rem;
+}
+main section.view4 .bottom .studio {
+  font-family: Lq38;
+  color: #edece8;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+main section.view4 .bottom .text {
+  color: #c8c6c3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section.view4 .bottom .text h1 {
+  font-size: 2.25rem;
+  font-family: chillax-regular;
+  color: #edece8;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 85%;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+main section.view4 .bottom .text h5 {
+  font-size: 1.175rem;
+  font-family: satoshi-light;
+  color: rgba(244, 242, 237, 0.6);
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 100%;
+}
+main section.view5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view5 .top {
+  padding: 1rem;
+}
+main section.view5 .top .text {
+  color: #c8c6c3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section.view5 .top .text h1 {
+  font-size: 2.25rem;
+  font-family: chillax-regular;
+  color: #edece8;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+main section.view5 .top .text .button {
+  display: none;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+main section.view5 .top .text .button .arrow {
+  background-color: #292929;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #5f5e5c;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  align-self: baseline;
+}
+main section.view5 .top .text .button button {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: Lq38;
+  padding: 0.7rem 1.5rem;
+  padding-left: 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #edece8;
+}
+main section.view5 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.view5 .bottom img {
+  width: 100%;
+  border-radius: 10px;
+}
+main section.view6 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view6 .top {
+  width: 100%;
+}
+main section.view6 .top img {
+  width: 100%;
+  border-radius: 10px;
+}
+main section.view6 .bottom {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+main section.view6 .bottom .studio {
+  font-family: Lq38;
+  color: #edece8;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+main section.view6 .bottom .text {
+  color: #c8c6c3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section.view6 .bottom .text h1 {
+  font-size: 2.25rem;
+  font-family: chillax-regular;
+  color: #edece8;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 85%;
+  text-transform: uppercase;
+}
+main section.view6 .bottom .text .button {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+main section.view6 .bottom .text .button .arrow {
+  background-color: #292929;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #5f5e5c;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  align-self: baseline;
+}
+main section.view6 .bottom .text .button button {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: Lq38;
+  padding: 0.7rem 1.5rem;
+  padding-left: 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #edece8;
+  text-transform: uppercase;
+}
+main section.view7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+main section.view7 .top {
+  padding: 2rem;
+  background-color: #cebd63;
+  border-radius: 10px;
+}
+main section.view7 .top .studio {
+  font-family: Lq38;
+  color: #121212;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+main section.view7 .top .text {
+  width: 100%;
+  color: #c8c6c3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section.view7 .top .text h1 {
+  font-size: 2.5rem;
+  font-family: chillax-regular;
+  font-weight: 100;
+  color: #edece8;
+  line-height: 1.1;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  color: #121212;
+}
+main section.view7 .top .text .button {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+main section.view7 .top .text .button button {
+  color: #fff;
+  width: 100%;
+  font-family: Lq38;
+  padding: 1rem 1.5rem;
+  padding-left: 0;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #121212;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -0.5rem;
+  letter-spacing: 1px;
+}
+main section.view7 .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+main section.view7 .bottom img {
+  width: 16%;
+  margin-bottom: 4rem;
+}
+main section.view7 .bottom .contact-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+main section.view7 .bottom .contact-icons .icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background-color: #292929;
+  border: 1px solid #5f5e5c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section.view7 .bottom .contact-icons .icon i {
+  font-size: 1.2rem;
+  color: #c8c6c3;
+}
+main section.view8 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view8 .view8-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+main section.view8 .view8-1 img {
+  width: 16%;
+  margin-bottom: 4rem;
+}
+main section.view8 .view8-1 .contact-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+main section.view8 .view8-1 .contact-icons .icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background-color: #292929;
+  border: 1px solid #5f5e5c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section.view8 .view8-1 .contact-icons .icon i {
+  font-size: 1.2rem;
+  color: #c8c6c3;
+}
+main section.view8 .view8-2 {
+  padding: 1rem;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+main section.view8 .view8-2 .view8-2-1,
+main section.view8 .view8-2 .view8-2-2,
+main section.view8 .view8-2 .view8-2-3 {
+  padding: 1rem;
+}
+main section.view8 .view8-2 .view8-2-1 h3,
+main section.view8 .view8-2 .view8-2-2 h3,
+main section.view8 .view8-2 .view8-2-3 h3 {
+  color: #edece8;
+  font-family: chillax-regular;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding-bottom: 1.4rem;
+}
+main section.view8 .view8-2 .view8-2-1 h6,
+main section.view8 .view8-2 .view8-2-2 h6,
+main section.view8 .view8-2 .view8-2-3 h6 {
+  font-size: 1rem;
+  color: rgba(186, 185, 181, 0.6);
+  font-family: Lq38;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 0.85rem 0 0.85rem;
+}
+main section.view8 .view8-2 .view8-2-1 .button {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+main section.view8 .view8-2 .view8-2-1 .button button {
+  color: #121212;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: Lq38;
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #cebd63;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+main section.view8 .view8-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+main section.view8 .view8-3 h6 {
+  font-size: 1rem;
+  color: rgba(186, 185, 181, 0.6);
+  font-family: Lq38;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 0.85rem 0 0.85rem;
+  text-align: center;
+  line-height: 1.6;
+}
+main section.view8 .view8-3 .button {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5rem;
+  justify-content: center;
+}
+main section.view8 .view8-3 .button .arrow {
+  background-color: #292929;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #5f5e5c;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  align-self: baseline;
+}
+main section.view8 .view8-3 .button .arrow i {
+  color: #c8c6c3;
+}
+main section.view8 .view8-3 .button button {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: Lq38;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.7rem 1rem;
+  padding-left: 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #edece8;
+  text-transform: uppercase;
+}
+main section.view8 .view8-3 span {
+  color: #edece8;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+@media (min-width: 900px) {
+  main section.view1 {
+    flex-direction: row;
+  }
+  main section.view1 .top,
+  main section.view1 .bottom {
+    width: 50%;
+  }
+  main section.view1 .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem;
+  }
+  main section.view1 .bottom .studio {
+    font-size: 0.875rem;
+  }
+  main section.view1 .bottom .text h1 {
+    font-size: 3.5rem;
+  }
+  main section.view1 .bottom .text h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    width: 85%;
+  }
+  main section.view1 .bottom .text .button {
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+  }
+  main section.view1 .bottom .text .button button {
+    margin-left: 0.2rem;
+  }
+  main section.view2 .boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }/*# sourceMappingURL=style.css.map */
