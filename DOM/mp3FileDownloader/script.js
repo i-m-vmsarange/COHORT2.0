@@ -10,6 +10,7 @@ btn.addEventListener("click", function () {
     grow++;
     percentVal.innerHTML = grow + " %";
     inner.style.width = grow + "%";
+    inner.style.transition = "all ease 0.3s";
   }, 100);
   setTimeout(() => {
     clearInterval(int);
